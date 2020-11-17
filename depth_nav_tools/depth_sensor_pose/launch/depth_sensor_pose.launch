@@ -1,0 +1,12 @@
+<launch>
+  <node name    = "depth_sensor_pose"
+        pkg     = "depth_sensor_pose"
+        type    = "depth_sensor_pose"
+        output  = "screen">
+   	  	<remap from="image" to="/camera/aligned_depth_to_color/image_raw"/>
+	  	<remap from="camera_info" to="/camera/aligned_depth_to_color/camera_info"/>
+    <rosparam command="load" file="$(find depth_sensor_pose)/config/params.yaml"/>
+	</node>
+</launch>
+
+

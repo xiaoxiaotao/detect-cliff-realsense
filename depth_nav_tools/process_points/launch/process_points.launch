@@ -1,0 +1,10 @@
+<launch>
+  <node name	= "process_points"
+				pkg		= "process_points"
+				type  = "process_points"
+				output = "screen">
+	 
+	</node>
+</launch>
+
+
